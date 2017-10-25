@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>word counter</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="inputItem">
+        <h1>Please input your sentence and then our program will display how many times you used each word.</h1>
+        <div class="form-group">
+          <label for="sentence">Please enter your sentence here:</label>
+          <input id="sentence" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn btn-danger">Submit your list!</button>
+      </form>
+      <div class="wordsList">
+        <h1>This is your words list:</h1>
+        <ul id="list">
+        </ul>
+      </div>
+    </div>
+</html>
