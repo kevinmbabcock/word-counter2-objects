@@ -1,7 +1,4 @@
 $(document).ready(function() {
-
-  var words= [];
-
   $("form#inputItem").submit(function(event) {
     event.preventDefault();
     var userSentence = $("#sentence").val();
@@ -17,10 +14,15 @@ $(document).ready(function() {
       return allWords;
     }, {});
 
-    // tutaj trzeba dodac metode na obiekcie ktora wyswietli elementy obiektu jako liste
+
+      var keyWords = Object.keys(countedWords);
+      var valueNumbes = Object.values(countedWords);
+      for (index=0; index < keyWords.length; index++) {
+        $("#list").append("<li>" + keyWords[index] + ", " + valueNumbes[index] + "</li>");
+      }
 
 
 
-
+    $(".wordsList").show();
   });
 });
